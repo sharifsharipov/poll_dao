@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:local_auth/local_auth.dart';
 
 class LocalAuth {
@@ -23,7 +24,7 @@ class LocalAuth {
         localizedReason: "Authenticate to access the app",
       );
     } catch (e) {
-      print("Error during authentication: $e");
+      debugPrint("Error during authentication: $e");
       return false;
     }
   }

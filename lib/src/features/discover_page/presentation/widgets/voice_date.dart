@@ -62,7 +62,7 @@ class _VoiceDataState extends State<VoiceData> {
         ),
         10.ph,
         Divider(
-          color: AppColors.black.withOpacity(0.3),
+          color: AppColors.black.withValues(alpha: 0.3),
           height: 1,
         ),
         20.ph,

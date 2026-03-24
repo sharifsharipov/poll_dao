@@ -279,14 +279,14 @@ class _ProfileSignOutBtn extends StatelessWidget {
           );
         },
         style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.all(AppColors.secondary),
-            foregroundColor: MaterialStateProperty.all(AppColors.black),
-            shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(
+            backgroundColor: WidgetStateProperty.all(AppColors.secondary),
+            foregroundColor: WidgetStateProperty.all(AppColors.black),
+            shape: WidgetStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12.0),
             )),
-            minimumSize: MaterialStateProperty.all(const Size(double.infinity, 45)),
-            padding: MaterialStateProperty.all(const EdgeInsets.all(10.0).copyWith(left: 20)),
-            shadowColor: MaterialStateProperty.all(Colors.transparent)),
+            minimumSize: WidgetStateProperty.all(const Size(double.infinity, 45)),
+            padding: WidgetStateProperty.all(const EdgeInsets.all(10.0).copyWith(left: 20)),
+            shadowColor: WidgetStateProperty.all(Colors.transparent)),
         child: const Align(
           alignment: Alignment.centerLeft,
           child: Text(

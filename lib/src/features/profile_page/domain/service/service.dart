@@ -78,17 +78,17 @@ class Service {
           options: Options(
             headers: {"access-token": StorageRepository.getString("token")},
           ));
-      print(StorageRepository.getString("token"));
+      debugPrint("TOKEN=>${StorageRepository.getString("token")}");
 
       LoggerService.i("Response=>$response");
       //LoggerService.e("Response=>${response.data}");
       LoggerService.d("Response=>${response.data.hashCode}");
       return UniversalData(data: ProfileModel.fromJson(response.data));
     } on DioException catch (e) {
-      print("DIO ERROR=>${e.response!.data}");
+      debugPrint("DIO ERROR=>${e.response!.data}");
       return UniversalData(error: e.response!.data.toString());
     } catch (e) {
-      print("DIO ERROR=>$e");
+      debugPrint("DIO ERROR=>$e");
       return UniversalData(error: e.toString());
     }
   }
@@ -107,13 +107,13 @@ class Service {
       LoggerService.i("Response=>$response");
       LoggerService.e("Response=>${response.data}");
       LoggerService.d("Response=>${response.data.hashCode}");
-      print("Response=>${response.data}");
+      debugPrint("Response=>${response.data}");
       return UniversalData(data: ChangePasswordModel.fromJson(response.data));
     } on DioException catch (e) {
-      print("DIO ERROR=>${e.response!.data}");
+      debugPrint("DIO ERROR=>${e.response!.data}");
       return UniversalData(error: e.response!.data.toString());
     } catch (e) {
-      print("ASOLUT POXUY ERROR=>$e");
+      debugPrint("ASOLUT POXUY ERROR=>$e");
       return UniversalData(error: e.toString());
     }
   }

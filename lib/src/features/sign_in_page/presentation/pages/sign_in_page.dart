@@ -95,7 +95,7 @@ class _SignInPageState extends State<SignInPage> {
                               padding: const EdgeInsets.only(left: 20, right: 20),
                               child: GlobalButton(
                                 onTap: () {
-                                  print('Sign In with Firdavs');
+                                  debugPrint('Sign In with Firdavs');
                                   signInBloc.add(SignInButtonPressed());
                                 },
                                 data: const Row(

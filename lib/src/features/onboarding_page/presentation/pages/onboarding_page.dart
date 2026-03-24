@@ -21,7 +21,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
     return Scaffold(
-      backgroundColor: AppColors.secondary.withOpacity(0.9),
+      backgroundColor: AppColors.secondary.withValues(alpha: 0.9),
       body: Column(
         children: [
            SizedBox(

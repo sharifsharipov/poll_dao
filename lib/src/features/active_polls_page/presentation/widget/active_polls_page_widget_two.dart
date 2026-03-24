@@ -38,7 +38,7 @@ class _ActivePollsPageWidgetsTwoState extends State<ActivePollsPageWidgetsTwo> {
               ),
             ),
             Divider(
-              color: AppColors.black.withOpacity(0.3),
+              color: AppColors.black.withValues(alpha: 0.3),
             ),
             const ChargePercentageIndicatorTwo(
                 chargePercentage: 30, option:"assets/images/img_1.png", text: 'Netflix & Chill 🍿'),

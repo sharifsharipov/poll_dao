@@ -102,16 +102,16 @@ class _OptionTextButtonState extends State<OptionTextButton> {
       widget.onSelect(widget.optionId);
     }, 
     style: ButtonStyle(
-      backgroundColor: MaterialStateProperty.all(widget.select ? selectBackgroundColor : unselectBackgroundColor),
-      foregroundColor: MaterialStateProperty.all(widget.select ? selectForegroundColor : unselectForegroundColor),
-      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+      backgroundColor: WidgetStateProperty.all(widget.select ? selectBackgroundColor : unselectBackgroundColor),
+      foregroundColor: WidgetStateProperty.all(widget.select ? selectForegroundColor : unselectForegroundColor),
+      shape: WidgetStateProperty.all<RoundedRectangleBorder>(
         RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(18.0),
         )
       ),
-      minimumSize: MaterialStateProperty.all(const Size(double.infinity, 45)),
-      padding: MaterialStateProperty.all(const EdgeInsets.all(10.0)),
-      shadowColor: MaterialStateProperty.all(Colors.transparent)
+      minimumSize: WidgetStateProperty.all(const Size(double.infinity, 45)),
+      padding: WidgetStateProperty.all(const EdgeInsets.all(10.0)),
+      shadowColor: WidgetStateProperty.all(Colors.transparent)
     ),
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,

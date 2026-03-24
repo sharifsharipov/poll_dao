@@ -69,7 +69,7 @@ class _ChargePercentageIndicatorTwoState extends State<ChargePercentageIndicator
                     borderRadius: BorderRadius.circular(5),
                     backgroundColor: Colors.transparent,
                     valueColor:
-                        AlwaysStoppedAnimation<Color>(tap ? AppColors.c_5B6D83.withOpacity(0.1) : AppColors.c_5856D6),
+                        AlwaysStoppedAnimation<Color>(tap ? AppColors.c_5B6D83.withValues(alpha: 0.1) : AppColors.c_5856D6),
                     value: widget.chargePercentage / 100.0,
                   ),
                 ),

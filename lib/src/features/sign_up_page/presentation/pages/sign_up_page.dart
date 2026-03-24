@@ -104,7 +104,7 @@ class _SignUpPageState extends State<SignUpPage> {
                             padding: const EdgeInsets.only(left: 20, right: 20),
                             child: GlobalButton(
                               onTap: () {
-                                print('Sign Up');
+                                debugPrint('Sign Up');
                                 signUpBloc.add(SignUpButtonPressed());
                               },
                               data: const Row(

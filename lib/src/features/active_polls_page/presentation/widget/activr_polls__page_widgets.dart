@@ -44,7 +44,7 @@ class _ActivePollsPageWidgetsState extends State<ActivePollsPageWidgets> {
               ),
             ),
             Divider(
-              color: AppColors.black.withOpacity(0.3),
+              color: AppColors.black.withValues(alpha: 0.3),
             ),
             Column(
               children: List.generate(1, (index) {

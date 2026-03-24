@@ -33,7 +33,7 @@ class CheckBiometric extends StatelessWidget {
               ),
             ),
           ),
-          CupertinoSwitch(value: value, onChanged: onChanged, activeColor: AppColors.c_5856D6),
+          CupertinoSwitch(value: value, onChanged: onChanged, activeTrackColor: AppColors.c_5856D6),
         ],
       ),
     );

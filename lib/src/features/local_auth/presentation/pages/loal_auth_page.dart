@@ -32,9 +32,9 @@ class _LocalAuthPageState extends State<LocalAuthPage> {
     try {
       canCheckBiometric = await auth.canCheckBiometrics;
 
-      print("Biometric supported:$canCheckBiometric");
+      debugPrint("Biometric supported:$canCheckBiometric");
     } on PlatformException catch (e) {
-      print("Biometric not supported:$e");
+      debugPrint("Biometric not supported:$e");
       canCheckBiometric = false;
     }
   }
@@ -43,9 +43,9 @@ class _LocalAuthPageState extends State<LocalAuthPage> {
     late List<BiometricType> biometricsType;
     try {
       biometricsType = await auth.getAvailableBiometrics();
-      print("Biometric supported:$biometricsType");
+      debugPrint("Biometric supported:$biometricsType");
     } on PlatformException catch (e) {
-      print("Biometric not supported:$e");
+    debugPrint("Biometric not supported:$e");
     }
     if (!mounted) return;
 
@@ -64,7 +64,7 @@ class _LocalAuthPageState extends State<LocalAuthPage> {
         Navigator.push(context, MaterialPageRoute(builder: (context) => const DisCoverPage()));
       }
     } on PlatformException catch (e) {
-      print(e);
+      debugPrint(e.toString());
       return;
     }
   }

@@ -14,7 +14,7 @@ class _OnboardingWidgetTwoState extends State<OnboardingWidgetTwot> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.secondary.withOpacity(0.9),
+      backgroundColor: AppColors.secondary.withValues(alpha: 0.9),
       body: SingleChildScrollView(
         child: Column(
           children: [

@@ -8,9 +8,9 @@ part 'create_poll_event.dart';
 part 'create_poll_state.dart';
 
 class CreatePollBloc extends Bloc<CreatePollEvent, CreatePollState> {
-  CreatePollBloc() : super(CreatePollState()) {
+  CreatePollBloc() : super(const CreatePollState()) {
     on<CreatePollEvent>((event, emit) {
-      // TODO: implement event handler
+     
     });
   }
 }

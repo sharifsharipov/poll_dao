@@ -26,7 +26,7 @@ class DataCategoryModel {
     return DataCategoryModel(
         id: json[DataCategoryModelFields.id] as int? ?? 0,
         cratedAt: DateTime.parse(json[DataCategoryModelFields.cratedAt]) as DateTime? ?? DateTime.now(),
-        name: json[DataCategoryModelFields.name] as String ?? "");
+        name: json[DataCategoryModelFields.name] as String );
   }
   Map<String, dynamic> toJson() =>
       {DataCategoryModelFields.id: id, DataCategoryModelFields.cratedAt: cratedAt, DataCategoryModelFields.name: name};

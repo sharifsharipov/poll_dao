@@ -13,7 +13,7 @@ class AnswerButtonFon extends StatelessWidget {
       child: Container(
         width: 26,
         height: 26,
-        decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: AppColors.c_93A2B4.withOpacity(0.3)),
+        decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: AppColors.c_93A2B4.withValues(alpha: 0.3)),
         child: Center(
           child: Text(
             answer,

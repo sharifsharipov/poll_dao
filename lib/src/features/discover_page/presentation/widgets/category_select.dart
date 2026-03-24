@@ -16,7 +16,7 @@ class CategoryProvider with ChangeNotifier {
 
   set selectedCategoryId(int? id) {
     _selectedCategoryId = id;
-    print("set selected category $id");
+    debugPrint("set selected category $id");
     notifyListeners();  // Уведомить слушателей об изменении
   }
 }

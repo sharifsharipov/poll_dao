@@ -22,7 +22,7 @@ class RegisterTextField extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
       child: Container(
         decoration: BoxDecoration(
-          color: AppColors.c_5856D6.withOpacity(0.2),
+          color: AppColors.c_5856D6.withValues(alpha: 0.2),
           borderRadius: BorderRadius.circular(10),
         ),
         child: Padding(

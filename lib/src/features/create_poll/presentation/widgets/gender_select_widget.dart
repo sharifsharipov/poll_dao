@@ -22,7 +22,7 @@ class _GenderSelectState extends State<GenderSelect> {
           width: 30,
           decoration: BoxDecoration(
             border: Border.all(
-              color: AppColors.c_A0A4A7.withOpacity(0.5),
+              color: AppColors.c_A0A4A7.withValues(alpha: 0.5),
               width: 1,
             ),
             borderRadius: BorderRadius.circular(15),

@@ -43,7 +43,7 @@ class _AgeControlWidgetState extends State<AgeControlWidget> {
               rangeTrackShape: const CustomRoundedRectRangeSliderTrackShape(),
               activeTrackColor: AppColors.c_5856D6,
               inactiveTrackColor: AppColors.secondary,
-              overlayColor: AppColors.c_5856D6.withOpacity(0.3),
+              overlayColor: AppColors.c_5856D6.withValues(alpha: 0.3),
               trackHeight: 4.0,
             ),
             child: RangeSlider(

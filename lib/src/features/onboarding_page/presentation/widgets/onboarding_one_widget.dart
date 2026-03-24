@@ -11,7 +11,7 @@ class OnboardingWidgetOne extends StatelessWidget {
     double height = MediaQuery.of(context).size.height;
     //EdgeInsets.only(top: height * 0.15),
     return Scaffold(
-      backgroundColor: AppColors.secondary.withOpacity(0.9),
+      backgroundColor: AppColors.secondary.withValues(alpha: 0.9),
       body: SingleChildScrollView(
         child: Column(
           children: [

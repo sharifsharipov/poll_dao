@@ -185,14 +185,14 @@ class CreatePollNotifier with ChangeNotifier {
   }
 
   void editOption(int index, OptionModel value) {
-    print('editOption: $index, $value');
+    debugPrint('editOption: $index, $value');
     _options[index] = value;
     _validationRequired = false;
     notifyListeners();
   }
 
   void addOption(OptionModel option) {
-    print('addOption: ${option.createdAt}');
+    debugPrint('addOption: ${option.createdAt}');
     _options.add(option);
     _validationRequired = false;
     notifyListeners();

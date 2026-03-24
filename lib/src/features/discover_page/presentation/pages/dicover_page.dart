@@ -131,7 +131,7 @@ class _DisCoverPageState extends State<DisCoverPage> {
                               radius: 20,
                               color: AppColors.c_5856D6,
                               textColorOne: AppColors.white,
-                              textColorTwo: AppColors.white.withOpacity(0.7),
+                              textColorTwo: AppColors.white.withValues(alpha: 0.7),
                               onTap: () {
                                 Navigator.pushNamed(context, RouteNames.activePollsPage);
                               },
@@ -153,7 +153,7 @@ class _DisCoverPageState extends State<DisCoverPage> {
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: SelectCategory(
-                // TODO(Veronika): check if this is the correct widget
+            
                 selectColor: isVoice,
               ),
             ),
@@ -195,7 +195,7 @@ class _PollListWidgetState extends State<PollListWidget> {
 
   void _fetchPolls() async {
     final categoryId = categoryProvider.selectedCategoryId;
-    print("Fetching polls for category ID: $categoryId"); // Добавлен вывод в консоль
+    debugPrint("Fetching polls for category ID: $categoryId"); // Добавлен вывод в консоль
     List<Poll> newPolls = await fetchPolls(selectedCategoryId: categoryId);
     setState(() {
       _polls = newPolls;
@@ -289,7 +289,7 @@ Future<List<Poll>> fetchPolls({int? selectedCategoryId}) async {
       return [];
     }
   } catch (e) {
-    print('fetch polls $e');
+    debugPrint('fetch polls $e');
     return [];
   }
 
@@ -322,7 +322,7 @@ Future<int> fetchMyPolls() async {
 
     if (response.statusCode == 200) {
       List<dynamic> data = response.data;
-      print("Количество элементов: ${data.length}");
+      debugPrint("Количество элементов: ${data.length}");
       return data.length;
     } else {
       throw Exception("Failed to fetch data: ${response.statusCode}");

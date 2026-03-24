@@ -178,8 +178,7 @@ class _PollResultPageState extends State<PollResultPage> {
                                       pollId: widget.pollId,
                                       token: token,
                                       age: [filter.minAge, filter.maxAge],
-                                      //TODO impl biometry
-                                      // biometryPassed: 'false',
+                     
                                       location: filter.selectedLanguage.join(', '),
                                       maternalLang: filter.selectedLocation,
                                       gender: filter.selectedGender.name,

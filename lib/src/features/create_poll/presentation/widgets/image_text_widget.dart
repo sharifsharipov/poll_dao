@@ -59,7 +59,7 @@ class _BaseNewPollState extends State<BaseNewPoll> {
           ),
           child: ListView.builder(
             itemBuilder: (BuildContext context, int index) {
-              print("TextControllers length: ${textControllers[index].text}");
+              debugPrint("TextControllers length: ${textControllers[index].text}");
               return Column(
                 children: [
                   ImageDataTextField(

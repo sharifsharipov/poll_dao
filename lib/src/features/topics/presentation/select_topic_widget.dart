@@ -34,7 +34,7 @@ class SelectTopicWidget extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 10),
-            if (!isValidated) const ValidationErrorText(text: 'Topic is required'), //TODO: Add validation
+            if (!isValidated) const ValidationErrorText(text: 'Topic is required'), 
           ],
         ),
       );

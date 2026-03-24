@@ -24,7 +24,7 @@ class PersonalInformation extends StatelessWidget {
         Align(alignment: Alignment.centerLeft, child: customTextWidget(text: title, color: AppColors.black)),
         10.ph,
         InkWell(
-          overlayColor: MaterialStateProperty.all(Colors.transparent),
+          overlayColor: WidgetStateProperty.all(Colors.transparent),
           onTap: onTap,
           child: Container(
             padding: const EdgeInsets.all(15),

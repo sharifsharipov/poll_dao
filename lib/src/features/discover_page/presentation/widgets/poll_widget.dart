@@ -347,14 +347,14 @@ class _PollWidgetState extends State<PollWidget> {
         padding: const EdgeInsets.symmetric(vertical: 3),
         child: ElevatedButton(
             style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(isSelected ? AppColors.c_5856D6 : AppColors.white),
-                foregroundColor: MaterialStateProperty.all(isSelected ? AppColors.secondary : AppColors.black),
-                shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(
+                backgroundColor: WidgetStateProperty.all(isSelected ? AppColors.c_5856D6 : AppColors.white),
+                foregroundColor: WidgetStateProperty.all(isSelected ? AppColors.secondary : AppColors.black),
+                shape: WidgetStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(18.0),
                 )),
-                minimumSize: MaterialStateProperty.all(const Size(double.infinity, 45)),
-                padding: MaterialStateProperty.all(const EdgeInsets.all(10.0)),
-                shadowColor: MaterialStateProperty.all(Colors.transparent)),
+                minimumSize: WidgetStateProperty.all(const Size(double.infinity, 45)),
+                padding: WidgetStateProperty.all(const EdgeInsets.all(10.0)),
+                shadowColor: WidgetStateProperty.all(Colors.transparent)),
             onPressed: () async {
               if (isBiometryRequired) {
                 final isAllowedToVote = await LocalAuthService.checkBiometryPassed(

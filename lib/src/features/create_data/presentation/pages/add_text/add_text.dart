@@ -29,7 +29,6 @@ class _AddTextState extends State<AddText> {
   bool dataPoll = false;
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
   }
 
@@ -75,7 +74,7 @@ class _AddTextState extends State<AddText> {
                               index: state,
                               onTap: () {
                                 dataPoll = true;
-                                print("dataPoll $dataPoll");
+                                debugPrint("dataPoll $dataPoll");
                               },
                             ));
                             controllersData.add(TextEditingController());
@@ -125,7 +124,7 @@ class _AddTextState extends State<AddText> {
                                       setState(() {
                                         dataPoll = true;
                                       });
-                                      print("onTap Pop");
+                                      debugPrint("onTap Pop");
                                       Navigator.pop(context);
                                     },
                                   ),
@@ -152,7 +151,7 @@ class _AddTextState extends State<AddText> {
                                       ));
                                       // controllersData.add(TextEditingController());
                                       //context.read<IndexCubit>().increment();
-                                      print("onTap Pop");
+                                      debugPrint("onTap Pop");
                                       Navigator.pop(context);
                                       setState(() {
                                         dataPoll = false;

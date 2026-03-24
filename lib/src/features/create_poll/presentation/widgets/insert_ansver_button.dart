@@ -33,7 +33,7 @@ class _InsertAnswerState extends State<InsertAnswer> {
 
   @override
   Widget build(BuildContext context) {
-    print("UI qayta yozildi");
+    debugPrint("UI qayta yozildi");
     double width = MediaQuery.of(context).size.width;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -44,7 +44,7 @@ class _InsertAnswerState extends State<InsertAnswer> {
         ),
         child: ListView.builder(
           itemBuilder: (BuildContext context, int index) {
-            print("TextControllers length: ${textControllers[index].text}");
+            debugPrint("TextControllers length: ${textControllers[index].text}");
             return Column(
               children: [
                 ImageDataTextField(

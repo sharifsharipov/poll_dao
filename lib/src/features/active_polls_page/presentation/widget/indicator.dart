@@ -47,7 +47,7 @@ class _ChargePercentageIndicatorState extends State<ChargePercentageIndicator> {
               width: (height / 23.15),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(40),
-                  color: !widget.selected ? AppColors.c_5B6D83.withOpacity(0.1) : AppColors.c_5856D6
+                  color: !widget.selected ? AppColors.c_5B6D83.withValues(alpha: 0.1) : AppColors.c_5856D6
                       ),
               child: Center(
                   child: Text(
@@ -86,7 +86,7 @@ class _ChargePercentageIndicatorState extends State<ChargePercentageIndicator> {
                     borderRadius: BorderRadius.circular(5),
                     backgroundColor: Colors.transparent,
                     valueColor: AlwaysStoppedAnimation<Color>(
-                        !widget.selected ? AppColors.c_5B6D83.withOpacity(0.1) : AppColors.c_5856D6),
+                        !widget.selected ? AppColors.c_5B6D83.withValues(alpha: 0.1) : AppColors.c_5856D6),
                     value: widget.chargePercentage / 100.0,
                   ),
                 ),

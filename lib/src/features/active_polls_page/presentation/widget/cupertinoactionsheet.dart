@@ -11,7 +11,7 @@ class CupertinoActionSheetActionWidget extends StatelessWidget {
     return  Padding(
       padding: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.67,left: MediaQuery.of(context).size.width * 0.05,right: MediaQuery.of(context).size.width * 0.05,bottom: MediaQuery.of(context).size.height * 0.01),
       child: CupertinoActionSheet(
-        title:  Text('You are about to delete this poll.',style: TextStyle(fontSize: 17,color: AppColors.c_111111.withOpacity(0.3),fontWeight: FontWeight.w500),),
+        title:  Text('You are about to delete this poll.',style: TextStyle(fontSize: 17,color: AppColors.c_111111.withValues(alpha: 0.3),fontWeight: FontWeight.w500),),
         actions: [
           CupertinoActionSheetAction(
             onPressed: onPressed,

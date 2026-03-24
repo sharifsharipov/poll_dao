@@ -102,7 +102,7 @@ class _CreateDataState extends State<CreateData> {
                                       controller.add(TextEditingController());
                                       //context.read<IndexCubit>().increment();
                                       setState(() {});
-                                      print("onTap Pop");
+                                      debugPrint("onTap Pop");
                                       Navigator.pop(context);
                                     },
                                   ),

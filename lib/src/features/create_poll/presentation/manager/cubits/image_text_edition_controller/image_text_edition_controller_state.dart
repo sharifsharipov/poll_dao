@@ -3,7 +3,7 @@ part of 'image_text_edition_controller_cubit.dart';
 @immutable
 abstract class ImageTextEditionControllerState extends Equatable {
   @override
-  // TODO: implement props
+  
   List<Object?> get props => throw UnimplementedError();
 }
 
